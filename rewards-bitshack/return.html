@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><title>return statement</title>
+<style>
+#myHeader {  
+color: white;
+padding: 50px;
+font-family:RAVIE;
+text-align: center;
+}
+
+body {
+background-image: url('https://sweetiq.com/wp-content/uploads/2016/11/iStock_97467073_LARGE.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed; 
+background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
+<h1 style="background-color:slateblue";font-family:'RAVIE;'><center>you have succesully logined <center></h1>
+<h2 id="myHeader">click here to see the availability of MK's</h2>
+<center><img src="down.gif" alt="down" width="200" height="200"></center>
+<center><button type="submit" class="registerbtn"><a href="grid.html">Availability</a></button></center>
+<p id="demo"></p>
+<script>
+const person = {
+a: "MK",
+b: "Travels",
+  id: 5566,
+  fullName : function() {
+  return this.a + " " + this.b;
+  }
+};
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
+
+</body>
+</html>
